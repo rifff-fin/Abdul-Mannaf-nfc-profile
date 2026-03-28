@@ -1,0 +1,108 @@
+.sectionTitle {
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px 13px 20px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-card-hover);
+  background: var(--color-card-elevated);
+  border-color: var(--color-border-accent);
+  outline: none;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+/* Left accent stripe */
+.stripe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-accent);
+  border-radius: 3px 0 0 3px;
+}
+
+/* Icon circle */
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: var(--color-accent-dim);
+  color: var(--color-text);
+  flex-shrink: 0;
+  transition: background 0.18s ease;
+}
+
+.card:hover .iconWrap {
+  background: rgba(107, 31, 42, 0.28);
+}
+
+/* Text group */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.platformName {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.handle {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Arrow */
+.arrow {
+  flex-shrink: 0;
+  color: var(--color-muted);
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card:hover .arrow {
+  transform: translateX(3px);
+  opacity: 1;
+  color: var(--color-text);
+}

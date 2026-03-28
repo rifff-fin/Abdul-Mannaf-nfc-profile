@@ -1,0 +1,68 @@
+.page {
+  min-height: 100dvh;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px 56px;
+  position: relative;
+}
+
+/* ─── Background Layer ─── */
+.bgLayer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Subtle grid lines */
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(107, 31, 42, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 31, 42, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Central radial glow */
+.bgGlow {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 480px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(107, 31, 42, 0.14) 0%, transparent 70%);
+  animation: pulseGlow 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Vignette overlay */
+.bgVignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.72) 100%);
+}
+
+/* Floating scan line */
+.scanLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(107, 31, 42, 0.45) 50%, transparent 100%);
+  animation: scanLine 14s linear infinite;
+}
+
+/* ─── Content container ─── */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
