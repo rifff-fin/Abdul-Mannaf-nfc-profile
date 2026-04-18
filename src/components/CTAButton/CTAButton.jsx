@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { HiArrowRight } from 'react-icons/hi'
 import styles from './CTAButton.module.css'
 
-const WHATSAPP_URL = 'https://wa.me/8801799446097'
+const WHATSAPP_URL = 'https://wa.me/8801715170946'
 
 export default function CTAButton() {
   return (

@@ -1,18 +1,24 @@
-import { MdLocationOn, MdFavorite } from 'react-icons/md'
+import { MdLocationOn, MdEngineering, MdWork } from 'react-icons/md'
 import styles from './QuickInfo.module.css'
 
 const INFO_ITEMS = [
   {
     Icon: MdLocationOn,
     label: 'Location',
-    value: 'South Badda, Dhaka',
-    sub: 'Hometown: Rajshahi',
+    value: 'Rajshahi, Bangladesh',
+    sub: 'Road Division, Rajshahi',
   },
   {
-    Icon: MdFavorite,
-    label: 'Status',
-    value: 'Married',
-    sub: null,
+    Icon: MdEngineering,
+    label: 'Current Role',
+    value: 'Sub-Divisional Engineer',
+    sub: 'Roads & Highways Dept.',
+  },
+  {
+    Icon: MdWork,
+    label: 'Experience',
+    value: '9+ Years',
+    sub: 'Civil & Structural Engineering',
   },
 ]
 

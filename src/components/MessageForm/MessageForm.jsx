@@ -4,7 +4,7 @@ import { MdSend, MdCheckCircle } from 'react-icons/md'
 import styles from './MessageForm.module.css'
 
 const MAX_CHARS = 500
-const WHATSAPP_NUMBER = '8801799446097'
+const WHATSAPP_NUMBER = '8801715170946'
 
 export default function MessageForm() {
   const [message, setMessage] = useState('')
@@ -53,7 +53,7 @@ export default function MessageForm() {
       <div className={styles.inputWrap}>
         <textarea
           className={styles.textarea}
-          placeholder="Hi Mahmood! I'd like to connect..."
+          placeholder="Hi Abdul Mannaf! I'd like to connect..."
           value={message}
           onChange={handleChange}
           onKeyDown={handleKeyDown}

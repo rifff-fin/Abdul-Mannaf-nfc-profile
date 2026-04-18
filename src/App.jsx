@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Header from './components/Header/Header'
 import CTAButton from './components/CTAButton/CTAButton'
+import Experience from './components/Experience/Experience'
 import Education from './components/Education/Education'
 import QuickInfo from './components/QuickInfo/QuickInfo'
 import SocialLinks from './components/SocialLinks/SocialLinks'
@@ -54,11 +55,15 @@ export default function App() {
         </motion.div>
 
         <motion.div variants={itemVariants}>
-          <Education />
+          <QuickInfo />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-          <QuickInfo />
+          <Experience />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <Education />
         </motion.div>
 
         <motion.div variants={itemVariants}>

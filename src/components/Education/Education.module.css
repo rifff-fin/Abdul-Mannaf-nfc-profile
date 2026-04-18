@@ -107,6 +107,12 @@
   color: var(--color-text-secondary);
 }
 
+.period {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;

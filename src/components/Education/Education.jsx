@@ -1,21 +1,15 @@
-import { MdSchool } from 'react-icons/md'
 import { FaUniversity } from 'react-icons/fa'
 import styles from './Education.module.css'
 
 const EDUCATION = [
   {
-    Icon: MdSchool,
-    level: 'Secondary School',
-    institution: 'Govt. Laboratory High School',
-    location: 'Rajshahi',
-    badge: 'SSC',
-  },
-  {
     Icon: FaUniversity,
-    level: 'University · Ongoing',
-    institution: 'BRAC University',
-    location: 'Dhaka',
-    badge: 'BSc. CSE',
+    level: 'Bachelor of Science · Civil Engineering',
+    institution: 'Dhaka University of Engineering & Technology (DUET)',
+    location: 'Gazipur, Bangladesh',
+    badge: 'BSc. Civil Eng.',
+    period: 'Sep 1995 – Dec 1999',
+    grade: 'CGPA 3.25 / 4.00',
   },
 ]
 
@@ -39,6 +33,7 @@ export default function Education() {
                 <span className={styles.location}>{item.location}</span>
                 <span className={styles.badge}>{item.badge}</span>
               </div>
+              <span className={styles.period}>{item.period} · {item.grade}</span>
             </div>
           </div>
         ))}

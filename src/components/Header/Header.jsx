@@ -21,9 +21,9 @@ export default function Header() {
         >
           <div className={styles.avatarRing}>
             <div className={styles.avatarInner}>
-              <img
-                src="/digpic.png"
-                alt="Mahmood Sadiq Diganto"
+          <img
+                src="/abm.jpeg"
+                alt="Abdul Mannaf Akhand"
                 className={styles.avatar}
               />
             </div>
@@ -33,7 +33,7 @@ export default function Header() {
 
       {/* Name with gradient */}
       <h1 className={styles.name}>
-        Mahmood Sadiq Diganto
+        Abdul Mannaf Akhand
       </h1>
 
       {/* Typewriter subtitle */}
@@ -41,10 +41,10 @@ export default function Header() {
         <Typewriter
           options={{
             strings: [
-              'A Learner.',
-              'Passionate Game Dev.',
-              'Attention Grabber.',
-              'Momentum Breaker.',
+              'Sub Divisional Engineer, RHD.',
+              'Structural Engineer, RDA.',
+              'News Presenter, Bangladesh Betar.',
+              'Civil Engineering Professional.',
             ],
             autoStart: true,
             loop: true,

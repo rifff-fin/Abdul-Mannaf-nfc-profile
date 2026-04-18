@@ -1,32 +1,25 @@
-import { FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
+import { FaLinkedin, FaWhatsapp, FaPhone } from 'react-icons/fa'
 import { HiArrowRight } from 'react-icons/hi'
 import styles from './SocialLinks.module.css'
 
 const SOCIAL_LINKS = [
   {
-    platform: 'Instagram',
-    handle: '@diganto_89',
-    Icon: FaInstagram,
-    href: 'https://www.instagram.com/diganto_89',
+    platform: 'LinkedIn',
+    handle: 'abdul-mannaf-akhand',
+    Icon: FaLinkedin,
+    href: 'https://www.linkedin.com/in/abdul-mannaf-akhand-373077389/',
   },
   {
-    platform: 'YouTube',
-    handle: '@Diggaming-k2e',
-    Icon: FaYoutube,
-    href: 'https://www.youtube.com/@Diggaming-k2e',
+    platform: 'WhatsApp',
+    handle: '+880 1715-170946',
+    Icon: FaWhatsapp,
+    href: 'https://wa.me/8801715170946',
   },
   {
-    platform: 'Facebook',
-    handle: 'mahmoodsadiq.diganto',
-    Icon: FaFacebook,
-    href: 'https://www.facebook.com/mahmoodsadiq.diganto.1',
-  },
-  {
-    platform: 'Email',
-    handle: 'mahmoodsadiqdiganto473@gmail.com',
-    Icon: MdEmail,
-    href: 'mailto:mahmoodsadiqdiganto473@gmail.com',
+    platform: 'Phone',
+    handle: '01715-170946',
+    Icon: FaPhone,
+    href: 'tel:+8801715170946',
   },
 ]
 
@@ -39,7 +32,7 @@ export default function SocialLinks() {
           <a
             key={platform}
             href={href}
-            target="_blank"
+            target={href.startsWith('tel') ? '_self' : '_blank'}
             rel="noopener noreferrer"
             className={styles.card}
             aria-label={`Visit ${platform}`}
